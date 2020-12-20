@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+h3 {
+  font-family: "poppins";
+  color: #35424a;
+}
+
 .cover {
   width: 100vw;
   background-color: white;
