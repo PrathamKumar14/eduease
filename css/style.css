@@ -3,6 +3,70 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+.cover {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px 0 100px 0;
+  border-bottom: 4px solid #e8491d;
+}
+
+.cover-img > img {
+  width: 500px;
+  text-align: center;
+}
+
+.cover-content {
+  display: flex;
+  place-items: center;
+}
+
+.cover-content > div > h1 {
+  font-family: "poppins";
+  font-style: italic;
+  font-size: 100px;
+  color: #35424a;
+  margin: 0;
+  background: -webkit-linear-gradient(left, #e8491d, #35424a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.cover-content > div > span {
+  color: #35424a;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "poppins";
+  font-style: italic;
+  position: relative;
+  bottom: 32px;
+}
+
+.cover-content > p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 469px) {
+  .cover-img > img {
+    width: 250px;
+  }
+
+  .cover-content > div > h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .cover-content > div > span {
+    display: inline-block;
+    text-align: center;
+    bottom: 0;
+  }
 }
 
 /* Global */
@@ -40,7 +104,7 @@ header {
   color: #ffffff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #e8491d 4px solid;
 }
 
 header a {
